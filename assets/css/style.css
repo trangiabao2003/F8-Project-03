@@ -54,6 +54,22 @@ a {
 	cursor: pointer;
 }
 
+.section-heading {
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: #10375c;
+}
+
+.section-desc {
+	margin-top: 18px;
+	font-weight: 300;
+	font-size: 1.8rem;
+	line-height: 1.67;
+	color: #575f66;
+}
+
 /* Header */
 .header {
 	min-height: 100vh;
@@ -225,4 +241,145 @@ a {
 	width: 210px;
 	height: 410px;
 	border-radius: 0px 6px 6px 0px;
+}
+
+/* Service */
+.service {
+	padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+	text-align: center;
+}
+
+.service__desc {
+	width: 468px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.service__row {
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.service__img {
+	width: 570px;
+	height: 570px;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.service__list {
+	margin-bottom: 55px;
+}
+
+/* Service item */
+.service-item {
+	display: flex;
+	width: 470px;
+	padding: 22px;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.25s;
+}
+
+.service-item:hover {
+	position: relative;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+	background: #2e80ce;
+	color: #fff;
+}
+
+.service-item__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 60px;
+	height: 60px;
+	background: #eff6fd;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+	border-radius: 50%;
+	color: #10375c;
+	transition: 0.25s;
+}
+
+.service-item__body {
+	margin-left: 20px;
+}
+
+.service-item__heading {
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.27;
+	color: #10375c;
+}
+
+.service-item__desc {
+	margin-top: 8px;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	color: #575f66;
+}
+
+/* Work */
+.work {
+	padding: 100px 0;
+	background: #f6fbff;
+}
+
+.work__desc {
+	width: 468px;
+}
+
+.work__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+	margin-top: 70px;
+}
+
+.work-item {
+	padding: 44px;
+	border: 16px solid #eaf6ff;
+	border-radius: 4px;
+	transition: 0.25s;
+}
+
+.work-item:hover {
+	transform: translateY(-16px);
+	border-color: #2e80ce;
+}
+
+.work-item__heading {
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 2.6rem;
+	line-height: 1.38;
+	color: #10375c;
+}
+
+.work-item__desc {
+	margin-top: 28px;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	color: #575f66;
+}
+
+.work-item__more {
+	display: inline-block;
+	margin-top: 18px;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	color: #2e80ce;
 }
